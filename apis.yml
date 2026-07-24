@@ -1,7 +1,17 @@
 aid: bookbub
 name: Bookbub
-description: Bookbub is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  BookBub is a book-discovery and ebook-deals platform that connects a membership of
+  over 10 million power readers with limited-time discounted ebooks, new releases,
+  and preorders across major retailers (Kindle, Apple Books, Barnes & Noble, Kobo,
+  Google Play) in the US, UK, Canada, and Australia. For readers it curates
+  personalized daily deal alerts and recommendations; for authors and publishers it
+  operates a partner side offering Featured Deals promotions, BookBub Ads (a
+  self-serve display advertising platform), preorder and new-release alerts, author
+  profiles, and free marketing tools, all managed through the Partner Dashboard.
+  BookBub is backed by Bloomberg Beta. No public developer API is currently
+  published; partner tooling is delivered through the web dashboard rather than a
+  documented API surface.
 url: https://raw.githubusercontent.com/api-evangelist/bookbub/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +19,59 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Books
+- Publishing
+- Ebooks
+- Reading
+- Book Discovery
+- Author Marketing
+- Advertising
+- Media
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+image: https://www.bookbub.com/favicon.ico
 common:
+- type: DomainSecurity
+  url: security/bookbub-domain-security.yml
 - type: Website
   url: https://www.bookbub.com/home/
+- type: Portal
+  url: https://www.bookbub.com/partners/overview
+- type: Blog
+  url: https://www.bookbub.com/blog
+- type: Support
+  url: https://help.bookbub.com
+- type: Pricing
+  url: https://www.bookbub.com/partners/featured_deals
+- type: SignUp
+  url: https://partners.bookbub.com/users/sign_up
+- type: TermsOfService
+  url: https://www.bookbub.com/terms
+- type: PrivacyPolicy
+  url: https://www.bookbub.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
